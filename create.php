@@ -38,18 +38,18 @@
             if($connection)
             {
 
-    $sql_insert = "INSERT INTO users(user_name,user_email,user_password) VALUES('$name','$email','$pass')  ";
-    
-    $result_insert = mysqli_query($connection,$sql_insert);
+                $sql_insert = "INSERT INTO users(user_name,user_email,user_password) VALUES('$name','$email','$pass')  ";
+                
+                $result_insert = mysqli_query($connection,$sql_insert);
 
-    if($result_insert)
-    {
-        echo "sucessfully inserted";
-    }
-    else
-    {
-        echo "error while inserting";
-    }
+                if($result_insert)
+                {
+                    echo "sucessfully inserted";
+                }
+                else
+                {
+                    echo "error while inserting";
+                }
 
 
 
